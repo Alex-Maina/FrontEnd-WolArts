@@ -16,43 +16,145 @@ body{
     top: -10px;
 }
 .navbar{
+    padding-top:1rem;
     position: relative;
     height: 5rem;
     width: 100%;
+    display: flex;
+    align-items: center;    
+}
+.logo_holder{
+    margin-top: 1rem;
+    margin-left: 6.25rem;
+    width: 6rem; 
+    height: 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0465e2;
+    cursor: pointer;
+}
+.logo{
+    height: 100%;
+}
+.logo_holder:hover{
+    width: 6rem; 
+    height: 5rem;
+    transition: linear 0.3s;
 }
 .nav_menu{
     position: relative;
-    padding-top:1rem;
     list-style-type: none;
     display: flex;
     margin-left: 2rem;
 }
-.logo_holder{
-    width: 5rem;
-    height: 5rem;
-}
-.logo{
-    width: 100%;
-}
 .menu{
-    font-weight: 500;
-    font-size: 1.25rem;
-    color:#666666;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color:#808080;
     margin-right: 2rem;
+    cursor: pointer;
 }
 .menu:hover{
-    font-weight: 600;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
     color:#303030;
     margin-right: 2rem;
+    transition: linear 0.3s;
+}
+.custom_print_button{
+    width: 11rem;
+    height: 2rem;
+    background: none;
+    border: 1px solid rgb(206, 101, 3);
+    color: rgb(206, 101, 3);
+    border-radius: 0.5rem;
+    font-size: 1.05rem;
+    margin: 0 2rem 0 5rem;
+    cursor: pointer;
+}
+.custom_print_button:hover{
+    color: rgb(224, 224, 224);
+    background:rgb(206, 101, 3);
+    transition: linear 0.3s;
+}
+.signin{
+    width: 5rem;
+    height: 2rem;
+    background: rgb(56, 56, 56);
+    color: rgb(224, 224, 224);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.05rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.signin:hover{
+    background:  rgb(10, 81, 173);
+    color: rgb(224, 224, 224);
+}
+.cart{
+    position: relative;
+    width: 2rem;
+    display: block;
+    text-align: center;
+    margin-right: 1rem;
+}
+.cart_quantity{
+    position: absolute;
+    right: 0.25rem;
+    top: -0.55rem;
+    color:rgb(10, 81, 173);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.cart_icon{
+    position: inherit;
+    font-size: 2.5rem;
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.cart_icon:hover{
+    font-size: 3rem;
+    color:rgb(10, 81, 173);
     transition: linear 0.3s;
 }
 
 /*---------------------------------CTO------------------------------------*/
 .CTO{
-    margin-top: 15rem;
-    margin-left: 5rem;
+    margin-top: 6.25rem;
+    margin-left: 10rem;
 }
 .CTO h1{
     font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 4.5rem;
+}
+.CTO h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 4.5rem;
+}
+.CTO_button{
+    width: 12rem;
+    height: 4rem;
+    background: rgb(49, 146, 243);
+    background: linear-gradient(-90deg, rgb(4, 128, 252) 0%, rgb(10, 81, 173) 61%);
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: rgb(238, 238, 238);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.CTO_button:hover{
+    background: none;
+    border: 1px solid rgb(10, 81, 173);
+    color: rgb(10, 81, 173);
+    transition: linear 0.6s;
+}
+.CTO_button:target{
+    display: none;
+    transition: linear 0.3s;
 }
