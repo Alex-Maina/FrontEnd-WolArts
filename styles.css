@@ -25,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    aspect-ratio: auto, 16 / 9;
 }
 .navbar{
     width: 90%;
@@ -137,16 +138,16 @@ body{
     margin-top: 5rem;
 }
 .CTO h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
 }
 .CTO h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin: 0;
-    margin-bottom: 4.5rem;
+    margin-bottom: 5rem;
 }
 .CTO_button{
     padding: 1rem 2rem;
