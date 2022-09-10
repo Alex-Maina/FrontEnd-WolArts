@@ -1,3 +1,8 @@
+html{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 body{
 	background-color: hsl(0, 0%, 98%);
 	min-height: 100vh;
@@ -5,27 +10,31 @@ body{
     margin: 0;
     padding: 0;
 	display: flex;
+    align-items: center;
 	flex-direction: column;
     font-family: 'Barlow', sans-serif;
+    
 }
 
 /*---------------------------------Navbar------------------------------------*/
-.header{
+.header_top{
+    width: 100%;
     background-image: url("./img/featured.png");
-    height: 700px;
-    top: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .navbar{
-    padding-top:1rem;
+    width: 90%;
+    margin:1rem 2rem 0 2rem;
     position: relative;
     height: 5rem;
-    width: 100%;
     display: flex;
-    align-items: center;    
+    justify-content: space-between;  
 }
 .logo_holder{
-    margin-top: 1rem;
-    margin-left: 6.25rem;
     width: 6rem; 
     height: 4rem;
     text-align: center;
@@ -46,13 +55,13 @@ body{
     position: relative;
     list-style-type: none;
     display: flex;
-    margin-left: 2rem;
+    margin-top: 1rem;
 }
 .menu{
     font-weight: 400;
     font-size: 1.2rem;
     color:#808080;
-    margin-right: 2rem;
+    margin: auto 2rem auto 0;
     cursor: pointer;
 }
 .menu:hover{
@@ -62,31 +71,34 @@ body{
     margin-right: 2rem;
     transition: linear 0.3s;
 }
+.right_menu{
+    width:40%;
+    display: flex;
+    justify-content: flex-end;
+}
 .custom_print_button{
-    width: 11rem;
-    height: 2rem;
-    background: none;
-    border: 1px solid rgb(206, 101, 3);
-    color: rgb(206, 101, 3);
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem 3rem 0 0;
+    background: linear-gradient(90deg, #c51930 0%, #d1a341 90%);
+    border: none;
+    color: rgb(238, 238, 238);
     border-radius: 0.5rem;
     font-size: 1.05rem;
-    margin: 0 2rem 0 5rem;
     cursor: pointer;
 }
 .custom_print_button:hover{
-    color: rgb(224, 224, 224);
-    background:rgb(206, 101, 3);
-    transition: linear 0.3s;
+    background: #c4952f;
 }
 .signin{
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem 3rem 0 0;
     background: rgb(56, 56, 56);
     color: rgb(224, 224, 224);
     border: none;
     border-radius: 0.5rem;
     font-size: 1.05rem;
-    margin-right: 2rem;
     cursor: pointer;
 }
 .signin:hover{
@@ -96,9 +108,8 @@ body{
 .cart{
     position: relative;
     width: 2rem;
-    display: block;
+    margin-top: 1rem;
     text-align: center;
-    margin-right: 1rem;
 }
 .cart_quantity{
     position: absolute;
@@ -110,7 +121,7 @@ body{
 }
 .cart_icon{
     position: inherit;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: rgb(56, 56, 56);
     cursor: pointer;
 }
@@ -122,39 +133,97 @@ body{
 
 /*---------------------------------CTO------------------------------------*/
 .CTO{
-    margin-top: 6.25rem;
-    margin-left: 10rem;
+    width: 70%;
+    margin-top: 5rem;
 }
 .CTO h1{
     font-size: 4rem;
     font-weight: 400;
+    margin: 0;
     margin-bottom: 4.5rem;
 }
 .CTO h2{
     font-size: 2.5rem;
     font-weight: 300;
+    margin: 0;
     margin-bottom: 4.5rem;
 }
 .CTO_button{
-    width: 12rem;
-    height: 4rem;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
     background: rgb(49, 146, 243);
-    background: linear-gradient(-90deg, rgb(4, 128, 252) 0%, rgb(10, 81, 173) 61%);
+    background: linear-gradient(-90deg, rgb(18, 131, 245) 0%, rgb(10, 81, 173) 61%);
     border: none;
     border-radius: 2rem;
-    text-align: center;
-    justify-content: center;
     color: rgb(238, 238, 238);
     font-size: 1.5rem;
     cursor: pointer;
+    filter: drop-shadow(1px 5px 4px #afafaf);
 }
 .CTO_button:hover{
-    background: none;
-    border: 1px solid rgb(10, 81, 173);
-    color: rgb(10, 81, 173);
-    transition: linear 0.6s;
+    background: rgb(18, 131, 245);
 }
-.CTO_button:target{
-    display: none;
-    transition: linear 0.3s;
+
+/*---------------------------------Divider------------------------------------*/
+.divider{
+    background-image: url("./img/img-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.75rem;
+    margin-top: 5rem;
+    width: 85%;
+    height: 20rem;
+    margin-bottom:4.5rem;
+}
+.discover{
+    color: rgb(238, 238, 238);
+    width: 30%;
+    margin: 3.5rem 0 auto 10.5rem;
+}
+.discover_text{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.discover_button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, #c51930 10%, #c4952f 90%);
+    cursor: pointer;
+}
+.discover_button:hover{
+    background: #c4952f;
+}
+
+/*---------------------------------Shop by Collection------------------------------------*/
+.shop{
+    width: 85%;
+}
+.shop_by{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+    align-items: center;
+}
+.shop_by P{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 5px;
+}
+.shop_by button{
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #c51930;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.shop_by button:hover{
+    color: rgb(238, 238, 238);
+    background: linear-gradient(90deg, #c51930 10%, #c4952f 90%);
+    border: none;
 }
