@@ -4,7 +4,7 @@ html{
     width: 100%;
 }
 body{
-	background-color: hsl(0, 0%, 98%);
+	background-color: #fafafa;
 	min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -243,9 +243,9 @@ body{
 .category_card{
     border-radius: 1rem;
     align-items: center;
-    background: #ffffff;
+    background: hsl(0, 0%, 98%);
     padding:0.25rem 0.25rem 0.25rem 0.25rem;
-    filter: drop-shadow(.5rem .5rem .5rem #d3d3d3);
+    filter: drop-shadow(.3rem .4rem .5rem #d3d3d3);
     cursor: pointer;
     color: #494949;
 }
@@ -262,7 +262,7 @@ body{
 }
 .category_card:hover{
     color:#c51930;
-    filter: drop-shadow(1rem 1rem 0.5rem #d3d3d3);
+    filter: drop-shadow(0.35rem .4rem 0.5rem #d3d3d3);
     width: 101%;
 }
 
